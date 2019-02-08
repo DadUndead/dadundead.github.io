@@ -1,0 +1,314 @@
+.main {
+  margin-left: 375px;
+}
+
+.main > section {
+  margin: 0;
+  overflow: hidden;
+  padding: 4em 0;
+  box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+  text-align: center;
+  background-image: url("../../assets/images/overlay.png");
+}
+
+.main > section.dark {
+  color: #ddd;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.main > section.dark h2, .main > section.dark h3, .main > section.dark h4, .main > section.dark h5, .main > section.dark h6 {
+  color: inherit;
+}
+
+.main > section.dark strong {
+  color: #fff;
+  border-color: inherit;
+}
+
+.main > section.dark a {
+  color: #fff;
+  border-color: inherit;
+}
+
+.main > section.dark a:hover {
+  border-bottom-color: rgba(255, 255, 255, 0);
+}
+
+.main > section.cover {
+  padding: 10em 0;
+  background-size: cover;
+  background-position: center center;
+}
+
+.main > section.one {
+  background-color: #000;
+  /*background-image: url("../../assets/images/banner.jpg");*/
+}
+
+.main > section.two {
+  background-color: #f5fafa;
+}
+
+.main > section.three {
+  background-color: #ecf1f1;
+}
+
+.main > section.four {
+  background-color: #e8edec;
+}
+
+.welcomeButton {
+  border: 0;
+  display: inline-block;
+}
+
+.welcomeButton:hover {
+  border: 0;
+}
+
+.welcomeButton .welcomeButtonIcon {
+  position: relative;
+  transition: top .3s;
+  top: 0;
+}
+
+.welcomeButton:hover .welcomeButtonIcon {
+  top: 30px;
+}
+/* particles ====================================================*/
+.one{
+  position: relative;
+}
+
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+/* form =========================================================*/
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button, .button {
+  position: relative;
+  display: inline-block;
+  border-radius: 0.35em;
+  color: #fff !important;
+  text-decoration: none;
+  padding: 0.75em 2.5em 0.75em 2.5em;
+  background-color: #8ebebc;
+  border: 0;
+  cursor: pointer;
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("../../assets/images/overlay.png");
+  transition: background-color 0.35s ease-in-out;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover,
+.button:hover {
+  background-color: #9ececc;
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:active,
+.button:active {
+  background-color: #7eaeac;
+}
+
+
+.contactForm label {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm input[type="password"],
+.contactForm select,
+.contactForm textarea {
+  position: relative;
+  -webkit-appearance: none;
+  display: block;
+  border: 0;
+  outline: 0;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.75);
+  width: 100%;
+  border-radius: 0.35em;
+  padding: 0.75em 1em 0.75em 1em;
+  box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
+  border: solid 1px rgba(0, 0, 0, 0.15);
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.contactForm input[type="text"]:focus,
+.contactForm input[type="email"]:focus,
+.contactForm input[type="password"]:focus,
+.contactForm select:focus,
+.contactForm textarea:focus {
+  box-shadow: 0 0 2px 1px #8ebebc;
+  background: #fff;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm input[type="password"],
+.contactForm select {
+  line-height: 1.25em;
+}
+
+.contactForm textarea {
+  min-height: 14em;
+}
+
+.contactForm ::-webkit-input-placeholder {
+  color: #555 !important;
+}
+
+.contactForm :-moz-placeholder {
+  color: #555 !important;
+}
+
+.contactForm ::-moz-placeholder {
+  color: #555 !important;
+}
+
+.contactForm :-ms-input-placeholder {
+  color: #555 !important;
+}
+
+.contactForm ::-moz-focus-inner {
+  border: 0;
+}
+
+
+.contactForm {
+  margin: 0 1.5em;
+}
+
+.contactFormTop {
+  margin: 0 0 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactFormName{
+  margin-right: 0.5em;
+}
+
+.contactFormEmail{
+  margin-left: 0.5em;
+}
+
+.contactFormName, .contactFormEmail {
+  flex-grow: 1;
+}
+
+.submitBtnWrapper{
+  margin-top: 1.5em;
+}
+
+/* media =======================================================*/
+@media screen and (max-width: 736px) {
+
+  .main > section {
+    padding: 2em 0;
+  }
+
+  .main section.cover {
+    padding: 4em 0em;
+  }
+
+  .main section.cover header {
+    padding: 0 1em;
+  }
+
+  .footer .copyright li {
+    display: block;
+    line-height: 1.25em;
+    border: 0;
+    padding: 0;
+    margin: 1em 0 0 0;
+  }
+
+  .footer .copyright li:first-child {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 960px) {
+
+  /*body.header-visible .main {*/
+  /*transform: translateX(275px);*/
+  /*}*/
+  /*body.header-visible #headerToggle {*/
+  /*transform: translateX(275px);*/
+  /*}*/
+  /*body.header-visible #header {*/
+  /*transform: translateX(0);*/
+  /*}*/
+  .footer {
+    margin-left: 0;
+  }
+
+  .main {
+    backface-visibility: hidden;
+    transition: transform 0.5s ease;
+    padding-bottom: 1px;
+    margin-left: 0;
+  }
+
+  .main > section {
+    padding: 3em 0;
+  }
+
+  .main section.cover {
+    padding: 4em 0;
+  }
+
+}
+
+@media screen and (min-width: 961px) and (max-width: 1320px) {
+  .footer {
+    margin-left: 20%;
+  }
+
+  .main {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1620px) {
+
+  .main > section {
+    padding: 3em 0;
+  }
+
+  .main section.cover {
+    padding: 5em 0;
+  }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1880px) {
+
+  .footer {
+    margin-left: 300px;
+  }
+
+  .main {
+    margin-left: 300px;
+  }
+}

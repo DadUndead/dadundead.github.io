@@ -1,0 +1,80 @@
+
+/* nav */
+.nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.nav ul li {
+  padding-left: 0;
+}
+
+.nav ul li a {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  transition: none;
+}
+
+.navLinkText {
+  position: relative;
+  display: block;
+  font-size: 0.8em;
+}
+
+.navLinkIcon {
+}
+
+.navLinkActive {
+  background: rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
+  color: #fff;
+}
+
+.navLinkActive .navLinkIcon {
+  color: #e27689;
+}
+
+
+/* media =======================================================*/
+@media screen and (max-width: 736px) {
+
+}
+
+@media screen and (max-width: 960px) {
+
+  .nav ul li a {
+    padding: 0.5em 1.25em 0.5em 1.25em;
+  }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1320px) {
+
+  .nav ul li a {
+    font-size: 0.8em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .navLinkText {
+    padding-right: 1em;
+  }
+
+}
+
+@media screen and (min-width: 961px) and (max-width: 1620px) {
+
+}
+
+@media screen and (min-width: 961px) and (max-width: 1880px){
+
+}
